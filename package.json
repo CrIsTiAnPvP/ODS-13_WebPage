@@ -13,6 +13,7 @@
     "@heroicons/react": "^2.2.0",
     "@tailwindcss/postcss": "^4.0.3",
     "flag-icons": "^7.3.2",
+    "framer-motion": "^11.18.2",
     "next": "15.1.6",
     "next-intl": "^3.26.3",
     "react": "^19.0.0",

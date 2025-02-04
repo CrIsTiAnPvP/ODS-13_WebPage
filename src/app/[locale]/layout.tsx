@@ -44,7 +44,9 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
          <NextIntlClientProvider locale={locale} messages={messages}>
-            {children}
+            <div className="flex flex-col min-h-screen scroll-smooth  ">
+              {children}
+            </div>
          </NextIntlClientProvider>
       </body>
     </html>

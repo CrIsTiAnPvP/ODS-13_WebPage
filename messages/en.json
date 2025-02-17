@@ -3,5 +3,37 @@
 		"1": "Home",
 		"2": "About",
 		"3": "Comments"
+	},
+	"rot": {
+		"1": "Climate Change",
+		"2": "Global Warming",
+		"3": "Carbon Emissions",
+		"slogan": "Against:"
+	},
+	"carousel":{
+		"1": {
+			"t": "Should we do something?",	
+			"st": "If we do nothing, climate change will continue"
+		},
+		"2": {
+			"t": "Droughts",
+			"st": "According to NASA, droughts are becoming more frequent"
+		},
+		"3": {
+			"t": "More and more...",
+			"st": "More and more lakes and rivers are drying up"
+		},
+		"4": {
+			"t": "The Poles",
+			"st": "They are melting at an alarming rate"
+		},
+		"5": {
+			"t": "High CO2 emissions",
+			"st": "Responsible for the destruction of the ozone layer"
+		},
+		"6": {
+			"t": "Too many factories",
+			"st": "Responsible for air pollution"
+		}
 	}
 }

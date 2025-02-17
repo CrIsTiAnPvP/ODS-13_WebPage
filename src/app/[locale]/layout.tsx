@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "ODS 13 Desarrollo Sostenible",
   description: "Web sobre los Objetivos de Desarrollo Sostenible",
   authors: [{name: "CrIsTiiAnPvP", url: "https://github.com/CrIsTiAnPvP"}],
+  icons: {icon: "/images/ods13.jpg"}
 };
 
 type RootLayoutProps = {

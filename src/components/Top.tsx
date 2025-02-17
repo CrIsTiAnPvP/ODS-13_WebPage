@@ -1,25 +1,26 @@
 import RotatingText from '@/TextAnimations/RotatingText/RotatingText'
+import {useTranslations} from 'next-intl';
 
 export default function Top() {
+	const t = useTranslations("rot")
+
   return (
 	<>	
-		<span>
-		<p>Hola</p>
+		<span className='flex items-center gap-1 justify-center mt-2'>
+		<p className='font-bold text-2xl'>{t('slogan')}</p>
 		<RotatingText
-		texts={['React', 'Bits', 'Is', 'Cool!']}
-		mainClassName="px-2 sm:px-2 md:px-3 bg-cyan-300 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+		texts={[t('1'), t('2'), t('3')]}
+		mainClassName="px-2 sm:px-2 md:px-3 bg-(--fondo-ojo) text-white text-2xl overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg w-auto grow max-w-sm"
 		staggerFrom={"last"}
-		initial={{ y: "50%" }}
+		initial={{ y: "100%" }}
 		animate={{ y: 0 }}
 		exit={{ y: "-120%" }}
 		staggerDuration={0.025}
 		splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
 		transition={{ type: "spring", damping: 30, stiffness: 400 }}
-		rotationInterval={2000}
+		rotationInterval={4000}
 		/>
 		</span>
-		<div>HOlaaaaaa</div>
-		<div>Top</div>
 	</>
 	
   )

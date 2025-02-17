@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+:root {
+	--fondo-ojo: #48773c;
+	--fern-green: #507a47ff;
+	--reseda-green: #698c61ff;
+	--cambridge-blue: #819d7aff;
+	--fern-green-2: #507c4bff;
+	--reseda-green-2: #6d8d65ff;
+	--reseda-green-3: #63875aff;
+}

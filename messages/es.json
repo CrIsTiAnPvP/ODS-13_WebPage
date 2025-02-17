@@ -3,5 +3,37 @@
 		"1": "Inicio",
 		"2": "Sobre Nosotros",
 		"3": "Comentarios"
+	},
+	"rot": {
+		"1": "El Cambio Climatico",
+		"2": "El Calentamiento Global",
+		"3": "Las Emisiones de Carbono",
+		"slogan": "En contra de:"
+	},
+	"carousel":{
+		"1": {
+			"t": "Debemos hacer algo?",	
+			"st": "Si no hacemos nada, el cambio climatico continuara"
+		},
+		"2": {
+			"t": "Sequias",
+			"st": "Según la NASA las sequias son cada vez más frecuentes"
+		},
+		"3": {
+			"t": "Cada vez más...",
+			"st": "Cada vez hay más lagos y rios secandose"
+		},
+		"4": {
+			"t": "Los Polos",
+			"st": "Se derriten a un ritmo alarmante"
+		},
+		"5": {
+			"t": "Altas emisiones de C02",
+			"st": "Culpables de la destrucción de la capa de ozono"
+		},
+		"6": {
+			"t": "Demasiadas Fabricas",
+			"st": "Responsables de la contaminación del aire"
+		}
 	}
 }

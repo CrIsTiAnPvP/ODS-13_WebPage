@@ -3,7 +3,7 @@ import { NextResponse, NextRequest } from "next/server";
 
 const prisma = new PrismaClient()
 
-export async function GET(req: NextRequest): Promise<NextResponse> {
+export async function GET(): Promise<NextResponse> {
     const comentarios = await prisma.comentarios_web.findMany()
     return NextResponse.json({ comentarios });
 }
@@ -30,7 +30,8 @@ export async function POST(req: NextRequest) {
             return NextResponse.json({ error: 'Failed to create comentario' }, { status: 500 });
         }
         return NextResponse.json({ comentario: newComentario }, { status: 200 });
-    } catch (error) {
+    } catch (e) {
+		console.log(e);
         return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
     }
 }

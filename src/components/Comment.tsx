@@ -35,7 +35,7 @@ export default function Comment() {
 	const [loading, setLoading] = useState(true);
 	const [comments, setComments] = useState<Array<{ Id: string; nombre: string; email: string; comentario: string; fecha: Date }>>([]);
 	const [error, setError] = useState<string | null>(null);
-	const [order, setOrder] = useState('newest');
+	// const [order, setOrder] = useState('newest');
 	const [isModalOpen, setIsModalOpen] = useState(false);
 
 	const t = useTranslations("comments");
@@ -185,7 +185,3 @@ export default function Comment() {
 		</>
 	)
 }
-function data(value: any) {
-	throw new Error('Function not implemented.');
-}
-

@@ -4,7 +4,7 @@ import { NextRequest } from "next/server";
 
 export default function middleware(req: NextRequest) {
 	const { nextUrl } = req;
-	const isApiRoute = nextUrl.pathname.startsWith('/api');
+	const isApiRoute = nextUrl.pathname.startsWith('/api') || nextUrl.pathname.startsWith('/functions');
 	if (isApiRoute) return;
 
 	return createIntlMiddleware(routing)(req);

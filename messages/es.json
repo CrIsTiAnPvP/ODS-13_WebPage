@@ -64,5 +64,37 @@
 			"t": "La solución del problema",
 			"st": "Es necesario aumentar la ambición y actuar en todos los niveles para hacer frente al cambio climático. Están sucediendo muchos cambios en todo el mundo, y las inversiones en energías renovables se han disparado. Aún así, queda mucho por hacer. Para limitar el aumento global de la temperatura muy por debajo de los 2 °C, o incluso de 1,5 °C, el mundo debe transformar sus sistemas energéticos, industriales, de transporte, alimentarios, agrícolas y forestales."
 		}
+	},
+	"comments":{
+		"1": "Dejar un comentario",
+		"2": {
+			"1": "Atrás",
+			"2": "Siguiente"
+		},
+		"3": {
+			"1": {
+				"1": "Introduce un nombre de usuario",
+				"2": "Este es el nombre que se mostrará en los comentarios"	
+			},
+			"2":{
+				"1": "Introduce un correo",
+				"2": "Este correo no será visible para los demás"
+			},
+			"3":{
+				"1": "Introduce un comentario",
+				"2": "Este comentario será visible para todos los usuarios"
+			}
+		},
+		"4": "Enviar",
+		"5": "Esta es la mejor web!",
+		"6": "Comentario enviado!"
+		
+	},
+	"errors":{
+		"1": "El nombre de usuario debe ser de al menos 2 carácteres",
+		"2": "El correo no es valido",
+		"3": "El comentario no puede estar vacio",
+		"4": "Ha ocurrido un error al obtener los comentarios",
+		"5": "Ha ocurrido un error, por favor intentelo de nuevo"
 	}
 }

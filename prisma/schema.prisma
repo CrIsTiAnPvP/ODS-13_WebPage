@@ -9,10 +9,10 @@ datasource db {
 }
 
 model noticias {
-  Id         String   @id @default(cuid()) @map("_id") @db.ObjectId
+  Id         String   @id @default(auto()) @map("_id") @db.ObjectId
   titulo     String
   pagina    String
-  fecha      DateTime
+  fecha      DateTime?
   contenido  String
   imagen     String
   enlace    String
@@ -20,19 +20,19 @@ model noticias {
 }
 
 model comentarios_noticia{
-  Id        String   @id @default(cuid()) @map("_id") @db.ObjectId
+  Id        String   @id @default(auto()) @map("_id") @db.ObjectId
   nombre     String
   email      String
   comentario String
-  fecha      DateTime
+  fecha      DateTime?
   noticiaId  String   @db.ObjectId
   noticia    noticias @relation(fields: [noticiaId], references: [Id])
 }
 
 model comentarios_web {
-  Id        String   @id @default(cuid()) @map("_id") @db.ObjectId
+  Id        String   @id @default(auto()) @map("_id") @db.ObjectId
   nombre     String
   email      String
   comentario String
-  fecha      DateTime
+  fecha      DateTime? @db.Timestamp
 }

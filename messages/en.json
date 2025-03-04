@@ -64,5 +64,36 @@
 			"t": "The solution to the problem",
 			"st": "It is necessary to increase ambition and act at all levels to address climate change. Many changes are happening around the world, and investments in renewable energies have skyrocketed. Still, much remains to be done. To limit the global temperature increase well below 2 °C, or even 1.5 °C, the world must transform its energy, industrial, transport, food, agricultural, and forestry systems."
 		}
+	},
+	"comments":{
+		"1": "Leave a comment",
+		"2": {
+			"1": "Back",
+			"2": "Next"
+		},
+		"3": {
+			"1": {
+				"1": "Enter a username",
+				"2": "This is the name that will be displayed in the comments"	
+			},
+			"2":{
+				"1": "Enter an email",
+				"2": "This email will not be visible to others"
+			},
+			"3":{
+				"1": "Enter a comment",
+				"2": "This comment will be visible to all users"
+			}
+		},
+		"4": "Submit",
+		"5": "This is the best website!",
+		"6": "Comment sent!"
+	},
+	"errors":{
+		"1": "The username must be at least 2 characters long",
+		"2": "The email is not valid",
+		"3": "The comment cannot be empty",
+		"4": "An error occurred while fetching the comments",
+		"5": "An error occurred, please try again"
 	}
 }

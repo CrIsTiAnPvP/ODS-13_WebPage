@@ -6,6 +6,19 @@ import Image from 'next/image';
 import { useRouter, usePathname } from 'next/navigation';
 import "../../node_modules/flag-icons/css/flag-icons.min.css"
 
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
+import { Button } from "@/components/ui/button"
+
 function classNames(...classes: [string, string]) {
   return classes.filter(Boolean).join(' ')
 }
@@ -37,6 +50,11 @@ export default function Nav() {
       name: t('3'),
       href: `/${locale}/comments`,
       current: pathname == `/${locale}/comments` ? true : false 
+    },
+    {
+      name: t('4'),
+      href: `/${locale}/news`,
+      current: pathname == `/${locale}/news` ? true : false
     }
   ]
 
@@ -99,6 +117,21 @@ export default function Nav() {
                 </MenuItem>
               </MenuItems>
             </Menu>
+            <AlertDialog>
+            <AlertDialogTrigger asChild>
+              <Button variant="ghost" className='hover:cursor-pointer outline-none border-none active:scale-95 transform transition-transform duration-150 bg-(--cambridge-blue) text-green-900 hover:bg-(--reseda-green-3) hover:text-white'>GitHub</Button>
+            </AlertDialogTrigger>
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                <AlertDialogTitle>{t('5.1')}</AlertDialogTitle>
+                <AlertDialogDescription>{t('5.2')}</AlertDialogDescription>
+              </AlertDialogHeader>
+              <AlertDialogFooter>
+                <AlertDialogCancel className='hover:cursor-pointer'>{t('5.3')}</AlertDialogCancel>
+                <AlertDialogAction className='hover:cursor-pointer'><a href="https://github.com/CrIsTiAnPvP">{t('5.4')}</a></AlertDialogAction>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
           </div>
         </div>
         <DisclosurePanel className="sm:hidden">

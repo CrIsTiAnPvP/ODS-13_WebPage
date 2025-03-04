@@ -2,7 +2,14 @@
 	"nav":{
 		"1": "Inicio",
 		"2": "Sobre Nosotros",
-		"3": "Comentarios"
+		"3": "Comentarios",
+		"4": "Ultimas Noticias",
+		"5": {
+			"1":"¿Estás seguro?",
+			"2": "Vas a abandonar la pagina web para dirigirte a https://github.com/CrIsTiAnPvP",
+			"3": "Cancelar",
+			"4": "Visitar"
+		}
 	},
 	"rot": {
 		"1": "El Cambio Climatico",
@@ -34,6 +41,28 @@
 		"6": {
 			"t": "Demasiadas Fabricas",
 			"st": "Responsables de la contaminación del aire"
+		}
+	},
+	"mainpage":{
+		"1":{
+			"t": "¿En que consiste el ODS 13?",
+			"st": "En adoptar medidas urgentes para combatir el cambio climático y sus efectos"
+		},
+		"2":{
+			"t": "¿Que es el Cambio Climatico?",
+			"st": "El cambio climático es un cambio en el patrón de los fenómenos meteorológicos"
+		},
+		"3":{
+			"t": "Acción inmediata",
+			"st": "La crisis climática no va a parar, y la comunidad internacional rehúye el compromiso necesario para revertirla. El cambio climático está alterando las economías nacionales y afectando a las distintas vidas y medios de subsistencia de muchas personas, especialmente las más vulnerables."
+		},
+		"4":{
+			"t": "¿Qué pasa si no se toman medidas?",
+			"st": "De no controlarse, los efectos del cambio climático elevarán la temperatura media mundial por encima de los 3 °C y afectarán negativamente a todos los ecosistemas. "
+		},
+		"5":{
+			"t": "La solución del problema",
+			"st": "Es necesario aumentar la ambición y actuar en todos los niveles para hacer frente al cambio climático. Están sucediendo muchos cambios en todo el mundo, y las inversiones en energías renovables se han disparado. Aún así, queda mucho por hacer. Para limitar el aumento global de la temperatura muy por debajo de los 2 °C, o incluso de 1,5 °C, el mundo debe transformar sus sistemas energéticos, industriales, de transporte, alimentarios, agrícolas y forestales."
 		}
 	}
 }

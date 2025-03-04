@@ -29,7 +29,7 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
   const messages = await getMessages();
   return (
     <html lang={locale}>
-      <body className="antialiased">
+      <body className="antialiased bg-gradient-to-br from-gray-200 via-slate-400 to-green-500">
          <NextIntlClientProvider locale={locale} messages={messages}>
             <div className="flex flex-col min-h-screen scroll-smooth  ">
               {children}

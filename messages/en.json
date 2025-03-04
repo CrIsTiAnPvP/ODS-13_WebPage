@@ -2,7 +2,14 @@
 	"nav":{
 		"1": "Home",
 		"2": "About",
-		"3": "Comments"
+		"3": "Comments",
+		"4": "Latest News",
+		"5": {
+			"1":"Are you sure?",
+			"2": "You are going to leave the website to go to https://github.com/CrIsTiAnPvP",
+			"3": "Cancel",
+			"4": "Visit"
+		}
 	},
 	"rot": {
 		"1": "Climate Change",
@@ -34,6 +41,28 @@
 		"6": {
 			"t": "Too many factories",
 			"st": "Responsible for air pollution"
+		}
+	},
+	"mainpage":{
+		"1":{
+			"t": "What is ODS 13?",
+			"st": "To take urgent action to combat climate change and its effects"
+		},
+		"2":{
+			"t": "What is Climate Change?",
+			"st": "Climate change is a change in the pattern of weather phenomena"
+		},
+		"3":{
+			"t": "Immediate action",
+			"st": "The climate crisis will not stop, and the international community is shying away from the necessary commitment to reverse it. Climate change is altering national economies and affecting the lives and livelihoods of many people, especially the most vulnerable."
+		},
+		"4":{
+			"t": "What happens if no action is taken?",
+			"st": "If not controlled, the effects of climate change will raise the global average temperature above 3 °C and negatively affect all ecosystems."
+		},
+		"5":{
+			"t": "The solution to the problem",
+			"st": "It is necessary to increase ambition and act at all levels to address climate change. Many changes are happening around the world, and investments in renewable energies have skyrocketed. Still, much remains to be done. To limit the global temperature increase well below 2 °C, or even 1.5 °C, the world must transform its energy, industrial, transport, food, agricultural, and forestry systems."
 		}
 	}
 }

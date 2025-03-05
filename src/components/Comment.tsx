@@ -1,5 +1,5 @@
 "use client"
-import { use, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Skeleton } from "@/components/ui/skeleton"
 import { useTranslations} from 'next-intl'
 import { Input } from "@/components/ui/input"

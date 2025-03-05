@@ -87,14 +87,25 @@
 		},
 		"4": "Enviar",
 		"5": "Esta es la mejor web!",
-		"6": "Comentario enviado!"
-		
+		"6": "Comentario enviado!",
+		"7": "Nuevos Primero",
+		"8": "Antiguos Primero",
+		"9": "Alfabeticamente",
+		"10": {
+			"1": "Anterior",
+			"2": "Siguiente"
+		},
+		"11":{
+			"1": "No hay ningún comentario aún",
+			"2": "¿Por qué no dejas uno?"
+		}
 	},
 	"errors":{
 		"1": "El nombre de usuario debe ser de al menos 2 carácteres",
 		"2": "El correo no es valido",
 		"3": "El comentario no puede estar vacio",
 		"4": "Ha ocurrido un error al obtener los comentarios",
-		"5": "Ha ocurrido un error, por favor intentelo de nuevo"
+		"5": "Ha ocurrido un error, por favor intentelo de nuevo",
+		"6": "El comentario no puede ser más largo de 40 carácteres"
 	}
 }

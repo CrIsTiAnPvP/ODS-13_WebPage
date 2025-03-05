@@ -4,6 +4,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import {useTranslations, useLocale} from 'next-intl';
 import Image from 'next/image';
 import { useRouter, usePathname } from 'next/navigation';
+import Link from 'next/link';
 import "../../node_modules/flag-icons/css/flag-icons.min.css"
 
 import {
@@ -128,7 +129,7 @@ export default function Nav() {
               </AlertDialogHeader>
               <AlertDialogFooter>
                 <AlertDialogCancel className='hover:cursor-pointer'>{t('5.3')}</AlertDialogCancel>
-                <AlertDialogAction className='hover:cursor-pointer'><a href="https://github.com/CrIsTiAnPvP">{t('5.4')}</a></AlertDialogAction>
+                <AlertDialogAction className='hover:cursor-pointer'><Link href="https://github.com/CrIsTiAnPvP">{t('5.4')}</Link></AlertDialogAction>
               </AlertDialogFooter>
             </AlertDialogContent>
           </AlertDialog>

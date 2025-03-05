@@ -87,7 +87,14 @@
 		},
 		"4": "Submit",
 		"5": "This is the best website!",
-		"6": "Comment sent!"
+		"6": "Comment sent!",
+		"7": "Newer First",
+		"8": "Older First",
+		"9": "Alphabetically",
+		"10": {
+			"1": "Previous",
+			"2": "Next"
+		}
 	},
 	"errors":{
 		"1": "The username must be at least 2 characters long",

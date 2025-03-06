@@ -6,18 +6,7 @@ import Image from 'next/image';
 import { useRouter, usePathname } from 'next/navigation';
 import Link from 'next/link';
 import "../../node_modules/flag-icons/css/flag-icons.min.css"
-
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog"
+import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from "@/components/ui/alert-dialog"
 import { Button } from "@/components/ui/button"
 
 function classNames(...classes: [string, string]) {
@@ -129,7 +118,7 @@ export default function Nav() {
               </AlertDialogHeader>
               <AlertDialogFooter>
                 <AlertDialogCancel className='hover:cursor-pointer'>{t('5.3')}</AlertDialogCancel>
-                <AlertDialogAction className='hover:cursor-pointer'><Link href="https://github.com/CrIsTiAnPvP">{t('5.4')}</Link></AlertDialogAction>
+                <Link href="https://github.com/CrIsTiAnPvP"><AlertDialogAction className='hover:cursor-pointer'>{t('5.4')}</AlertDialogAction></Link>
               </AlertDialogFooter>
             </AlertDialogContent>
           </AlertDialog>

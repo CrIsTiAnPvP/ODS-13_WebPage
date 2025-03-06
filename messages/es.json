@@ -98,7 +98,9 @@
 		"11":{
 			"1": "No hay ningún comentario aún",
 			"2": "¿Por qué no dejas uno?"
-		}
+		},
+		"12": "Numero de comentarios por página",
+		"13": "Orden de los comentarios"
 	},
 	"errors":{
 		"1": "El nombre de usuario debe ser de al menos 2 carácteres",

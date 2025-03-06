@@ -94,7 +94,13 @@
 		"10": {
 			"1": "Previous",
 			"2": "Next"
-		}
+		},
+		"11": {
+			"1": "There aren't any comments yet",
+			"2": "Be the first to comment!"
+		},
+		"12": "Number of comments per page",
+		"13": "Order of the comments"
 	},
 	"errors":{
 		"1": "The username must be at least 2 characters long",

@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button"
 import { toast } from "sonner"
 import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from "@/components/ui/pagination"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Tooltip } from "react-tooltip"
 
 type Comentario = {
 	Id: string;
@@ -101,7 +102,7 @@ export default function Comment() {
 	if (loading) {
 		return (
 			<div className='flex justify-center mt-10 my-2'>
-				<div className='grid grid-cols-3 gap-4 my-5'>
+				<div className='grid grid-cols-1 gap-4 my-5 lg:grid-cols-3'>
 					{Array.from({ length: 6 }).map((_, i) => (
 						<div key={i} className="flex items-center space-x-4">
 							<div className="space-y-2">
@@ -127,9 +128,9 @@ export default function Comment() {
 	if (comments.length === 0 && !loading) {
 		return (
 			<div className='flex justify-center mt-10'>
-				<div className='grid grid-cols-3 gap-4 my-5'>
+				<div className='grid grid-cols-1 gap-4 my-5 lg:grid-cols-3'>
 					<div className="flex items-center justify-center">
-						<div className="">
+						<div>
 							<p className="text-2xl font-bold">{t('11.1')}</p>
 							<p className="text-gray-600">{t('11.2')}</p>
 							<Button onClick={() => setIsModalOpen(true)} className="transform active:scale-95 transition-transform hover:cursor-pointer mt-4 bg-(--cambridge-blue) text-green-900 hover:bg-(--reseda-green-3) hover:text-white px-4 py-2 rounded">{t('1')}</Button>
@@ -196,7 +197,7 @@ export default function Comment() {
 	else return (
 		<>	
 			<div>
-				<div className="flex justify-end w-5/6 gap-2">
+				<div className="flex justify-end w-full lg:w-5/6 gap-2">
 					<Select onValueChange={(value) => {
 						setLoading(true);
 						setOrder(value);
@@ -204,7 +205,7 @@ export default function Comment() {
 							setLoading(false);
 						}, 400);
 						} } defaultValue={order}>
-						<SelectTrigger className='transform active:scale-95 transition-transform hover:cursor-pointer mt-4 bg-(--cambridge-blue) text-green-900 hover:bg-(--reseda-green-3) hover:text-white px-4 py-2 rounded'>
+						<SelectTrigger data-tooltip-id="order" className='transform active:scale-95 transition-transform hover:cursor-pointer mt-4 bg-(--cambridge-blue) text-green-900 hover:bg-(--reseda-green-3) hover:text-white px-4 py-2 rounded'>
 							<SelectValue placeholder="Cantidad"/>
 						</SelectTrigger>
 						<SelectContent className='bg-(--cambridge-blue) '>
@@ -213,7 +214,8 @@ export default function Comment() {
 							<SelectItem value='az' className='text-green-900 hover:cursor-pointer hover:bg-(--reseda-green-3) hover:text-white'>{t('9')}</SelectItem>
 						</SelectContent>
 					</Select>
-
+					<Tooltip id='order' content={t('13')} noArrow delayShow={700}/>
+					
 					<Select onValueChange={(value) => {
 						setLoading(true);
 						setHowMany(parseInt(value));
@@ -221,7 +223,7 @@ export default function Comment() {
 							setLoading(false);
 						}, 400);
 						} } defaultValue={howMany.toString()}>
-						<SelectTrigger className='transform active:scale-95 transition-transform hover:cursor-pointer mt-4 bg-(--cambridge-blue) text-green-900 hover:bg-(--reseda-green-3) hover:text-white px-4 py-2 rounded'>
+						<SelectTrigger data-tooltip-id="howMany" className='transform active:scale-95 transition-transform hover:cursor-pointer mt-4 bg-(--cambridge-blue) text-green-900 hover:bg-(--reseda-green-3) hover:text-white px-4 py-2 rounded'>
 							<SelectValue placeholder="Cantidad"/>
 						</SelectTrigger>
 						<SelectContent className='bg-(--cambridge-blue) '>
@@ -230,6 +232,7 @@ export default function Comment() {
 							<SelectItem value='24' className='text-green-900 hover:cursor-pointer hover:bg-(--reseda-green-3) hover:text-white'>24</SelectItem>
 						</SelectContent>
 					</Select>
+					<Tooltip id='howMany' content={t('12')} noArrow delayShow={700}/>
 
 					<Button onClick={() => setIsModalOpen(true)} className="transform active:scale-95 transition-transform hover:cursor-pointer mt-4 bg-(--cambridge-blue) text-green-900 hover:bg-(--reseda-green-3) hover:text-white px-4 py-2 rounded">{t('1')}</Button>
 				</div>
@@ -319,7 +322,7 @@ export default function Comment() {
 				)}
 				</div>
 				<div className="flex justify-center mt-10">
-					<div className="grid grid-cols-4 gap-y-4 gap-x-0">
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-4 gap-x-0">
 					{
 						comments
 							.sort((a, b) => {
@@ -328,7 +331,7 @@ export default function Comment() {
 								} else if (order === 'oldest') {
 									return new Date(a.fecha).getTime() - new Date(b.fecha).getTime();
 								} else if (order === 'az') {
-									return a.nombre.localeCompare(b.nombre);
+									return a.comentario.localeCompare(b.comentario);
 								}
 								return 0;
 							})

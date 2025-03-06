@@ -7,10 +7,10 @@ export default function Top() {
   return (
 	<>	
 		<span className='flex items-center gap-1 justify-center mt-2'>
-		<p className='font-bold text-2xl'>{t('slogan')}</p>
+		<p className='font-bold text-xl lg:text-2xl'>{t('slogan')}</p>
 		<RotatingText
 		texts={[t('1'), t('2'), t('3')]}
-		mainClassName="px-2 sm:px-2 md:px-3 bg-(--fondo-ojo) text-white text-2xl overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg w-auto grow max-w-sm"
+		mainClassName="sm:px-1 md:px-2 bg-(--fondo-ojo) text-white text-xl lg:text-2xl overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg w-auto grow max-w-sm"
 		staggerFrom={"last"}
 		initial={{ y: "100%" }}
 		animate={{ y: 0 }}

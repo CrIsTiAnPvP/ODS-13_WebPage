@@ -8,7 +8,7 @@ export default function Video() {
 	if (locale === 'es') {
 		return (
 			<div className="flex justify-center mb-0 mt-5">
-				<video autoPlay muted width="50%">
+				<video autoPlay muted className='w-xs lg:w-1/2'>
 					<source src="/videos/ods13es.mp4" type="video/mp4" />
 					Lo sentimos, tu navegador no soporta videos.
 				</video>

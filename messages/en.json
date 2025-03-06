@@ -108,5 +108,32 @@
 		"3": "The comment cannot be empty",
 		"4": "An error occurred while fetching the comments",
 		"5": "An error occurred, please try again"
+	},
+	"about":{
+		"title": "About Us",
+		"description": "This project focuses on raising awareness about climate change and what we must do to remedy it as soon as possible",
+		"technologies":{
+			"title":"What has been used in this project?",
+			"names":{
+				"1": "React",
+				"2": "Node.js",
+				"3": "Next.js",
+				"4": "MongoDB",
+				"5": "ShadCN",
+				"6": "i18next",
+				"7": "TailwindCSS",
+				"8": "Prisma"
+			},
+			"descs":{
+				"1": "React es un framework de JavaScript/TypeScript que se utiliza para crear interfaces de usuario interactivas y reactivas.",
+				"2": "Node.js es un entorno de ejecución de JavaScript que se utiliza para ejecutar código JavaScript en el servidor.",
+				"3": "Next.js es un framework de React que se utiliza para crear aplicaciones web y sitios web estáticos.",
+				"4": "MongoDB es una base de datos NoSQL que se utiliza para almacenar datos en formato JSON.",
+				"5": "ShadCN es una libreria de componentes de React",
+				"6": "i18next es una libreria de internacionalización para React",
+				"7": "TailwindCSS es un framework de CSS que se utiliza para diseñar sitios web y aplicaciones web.",
+				"8": "Prisma es un ORM para Node.js que se utiliza para interactuar con bases de datos relacionales."
+			}
+		}
 	}
 }

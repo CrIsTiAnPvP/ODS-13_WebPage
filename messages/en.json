@@ -135,5 +135,38 @@
 				"8": "Prisma es un ORM para Node.js que se utiliza para interactuar con bases de datos relacionales."
 			}
 		}
+	},
+	"news": {
+		"1": "Add a new news",
+		"2": {
+			"1": "Enter a title for the news",
+			"2": "This title will be displayed in the news",
+			"3": "Global warming..."
+		},
+		"3": {
+			"1": "Enter a link",
+			"2": "This link will be displayed in the news"
+		},
+		"4": {
+			"1": "Enter the content of the news",
+			"2": "This content will be displayed in the news",
+			"3": "Global warming is a problem that affects everyone..."
+		},
+		"5": {
+			"1": "Enter an image",
+			"2": "This image will be displayed in the news",
+			"3": "https://www.cristianac.live/image.jpg"
+		},
+		"date": {
+			"1": "Choose a date",
+			"2": "This date is the publication date of the news"
+		},
+		"errors":{
+			"1": "The title of the news must be at least 5 characters long",
+			"2": "You must enter a valid link",
+			"3": "You must enter a valid date",
+			"4": "The content of the news must be at least 100 characters long",
+			"5": "You must enter the main image link of the news"
+		}
 	}
 }

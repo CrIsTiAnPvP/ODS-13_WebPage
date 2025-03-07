@@ -13,15 +13,6 @@ import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, Pagi
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Tooltip } from "react-tooltip"
 
-type Comentario = {
-	Id: string;
-	nombre: string;
-	email: string;
-	comentario: string;
-	fecha: Date;
-}
-
-
 export default function Comment() {
 	const er = useTranslations("errors");
 	const schema = z.object({

@@ -102,12 +102,14 @@
 		"12": "Number of comments per page",
 		"13": "Order of the comments"
 	},
-	"errors":{
+	"errors": {
 		"1": "The username must be at least 2 characters long",
 		"2": "The email is not valid",
 		"3": "The comment cannot be empty",
 		"4": "An error occurred while fetching the comments",
-		"5": "An error occurred, please try again"
+		"5": "An error occurred, please try again",
+		"6": "The comment cannot be longer than 40 characters",
+		"7": "An error occurred while fetching the news"
 	},
 	"about":{
 		"title": "About Us",
@@ -167,6 +169,27 @@
 			"3": "You must enter a valid date",
 			"4": "The content of the news must be at least 100 characters long",
 			"5": "You must enter the main image link of the news"
+		},
+		"page": {
+			"1": "Newer First",
+			"2": "Older First",
+			"3": "Alphabetically",
+			"4": "Number of news per page",
+			"5": "Order of the news",
+			"6": "Read more...",
+			"10": {
+				"1": "Previous",
+				"2": "Next"
+			},
+			"errors": {
+				"1": "There are no news yet",
+				"2": "Wait a moment and try again"
+			}
 		}
+	},
+	"404":{
+		"1": "Page not found",
+		"2": "Sorry, the page you are looking for does not exist. You can always try again by clicking the button below",
+		"3": "Back to home"
 	}
 }

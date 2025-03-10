@@ -1,10 +1,11 @@
 import Nav from "@/components/NavBar"
+import News from "@/components/News"
 
-export default function News() {
+export default function NewsPage() {
   return (
     <>
       <Nav />
-      <div>page</div>
+      <News />
     </>
   )
 }

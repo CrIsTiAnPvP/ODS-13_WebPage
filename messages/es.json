@@ -108,7 +108,8 @@
 		"3": "El comentario no puede estar vacio",
 		"4": "Ha ocurrido un error al obtener los comentarios",
 		"5": "Ha ocurrido un error, por favor intentelo de nuevo",
-		"6": "El comentario no puede ser más largo de 40 carácteres"
+		"6": "El comentario no puede ser más largo de 40 carácteres",
+		"7": "Ha ocurrido un error al obtener las noticias"
 	},
 	"about":{
 		"title": "Sobre Nosotros",
@@ -168,6 +169,27 @@
 			"3": "Debes introducir una fecha válida",
 			"4": "El contenido de la noticia como mínimo debe tener 100 carácteres",
 			"5": "Debes introducir el enlace de la imagen principal de la noticia"
+		},
+		"page": {
+			"1": "Nuevas Primero",
+			"2": "Antiguas Primero",
+			"3": "Alfabeticamente",
+			"4": "Numero de noticias por página",
+			"5": "Orden de las noticias",
+			"6": "Leer más...",
+			"10": {
+				"1": "Anterior",
+				"2": "Siguiente"
+			},
+			"errors": {
+				"1": "Aun no hay noticias",
+				"2": "Espera un momento y vuelve a intentarlo"
+			}
 		}
+	},
+	"404":{
+		"1": "Página no encontrada",
+		"2": "Lo sentimos, la página que buscas no existe. Siempre puedes volver a intentarlo pulsando el botón de abajo",
+		"3": "Volver al inicio"
 	}
 }

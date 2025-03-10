@@ -1,4 +1,4 @@
-type Comentario = {
+type comentario = {
 	Id: string;
 	nombre: string;
 	email: string;

@@ -14,18 +14,18 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Tooltip } from "react-tooltip"
 
 export default function Comment() {
-	const er = useTranslations("errors");
+	const err = useTranslations("errors");
 	const schema = z.object({
 		nombre: z.string().min(2, {
-			message: er("1"),
+			message: err("1"),
 		}),
 		email: z.string().email({
-			message: er("2"),
+			message: err("2"),
 		}),
 		comentario: z.string().min(2, {
-			message: er("3"),
+			message: err("3"),
 		}).max(30, {
-			message: er("6")
+			message: err("6")
 		}),
 	})
 	const form = useForm<z.infer<typeof schema>>({
@@ -38,7 +38,7 @@ export default function Comment() {
 	  })
 
 	const [loading, setLoading] = useState(true);
-	const [comments, setComments] = useState<Array<{ Id: string; nombre: string; email: string; comentario: string; fecha: Date }>>([]);
+	const [comments, setComments] = useState<Array<comentario>>([]);
 	const [error, setError] = useState<string | null>(null);
 	const [page, setPage] = useState(1);
 	const [totalPages, setTotalPages] = useState(1);
@@ -51,7 +51,7 @@ export default function Comment() {
 	useEffect(() => {
 		fetch('/api/comments')
 		.then(r => {
-			if (!r.ok) throw new Error(er('4'));
+			if (!r.ok) throw new Error(err('4'));
 			return r.json();
 		}).then(data => {
 			setComments(data.comentarios);
@@ -80,7 +80,7 @@ export default function Comment() {
 				'Content-Type': 'application/json',
 			},
 		}).then(r => {
-			if (!r.ok) throw new Error(er('5'));
+			if (!r.ok) throw new Error(err('5'));
 			return r.json();
 		}
 		).then(data => {
@@ -188,7 +188,7 @@ export default function Comment() {
 	else return (
 		<>	
 			<div>
-				<div className="flex justify-end w-full lg:w-5/6 gap-2">
+				<div className="flex justify-end w-full lg:w-5/6 gap-2 px-3 lg:px-0">
 					<Select onValueChange={(value) => {
 						setLoading(true);
 						setOrder(value);
@@ -228,34 +228,34 @@ export default function Comment() {
 					<Button onClick={() => setIsModalOpen(true)} className="transform active:scale-95 transition-transform hover:cursor-pointer mt-4 bg-(--cambridge-blue) text-green-900 hover:bg-(--reseda-green-3) hover:text-white px-4 py-2 rounded">{t('1')}</Button>
 				</div>
 			<div>
-					{totalPages > 1 ? (
-						<Pagination>
-						<PaginationContent>
-							<PaginationItem>
-								<PaginationPrevious className='transform active:scale-95 transition-transform hover:cursor-pointer bg-(--cambridge-blue) text-green-900 hover:bg-(--reseda-green-3) hover:text-white' texto={t('10.1')} onClick={() => {
-									if (page > 1) {
-										setPage(page - 1);
-									}
-								}}/>
-							</PaginationItem>
-							<PaginationItem>
-								{Array.from({ length: totalPages }, (_, i) => (
-									<PaginationLink className='mx-1 aria-[current]:text-white transform active:scale-95 transition-transform hover:cursor-pointer bg-(--cambridge-blue) text-green-900 hover:bg-(--reseda-green-3) hover:text-white' key={i + 1} isActive={(i + 1 === page)} onClick={() => setPage(i + 1)}>{i + 1}</PaginationLink>
-								))}
-							</PaginationItem>
-							<PaginationItem>
-								{totalPages > 3 ? <PaginationEllipsis /> : null}
-							</PaginationItem>
-							<PaginationItem>
-								<PaginationNext className='transform active:scale-95 transition-transform hover:cursor-pointer bg-(--cambridge-blue) text-green-900 hover:bg-(--reseda-green-3) hover:text-white' texto={t('10.2')} onClick={() => {
-									if (page < totalPages) {
-										setPage(page + 1);
-									}
-								}}/>
-							</PaginationItem>
-						</PaginationContent>
-					</Pagination>
-					) : null}
+				{totalPages > 1 ? (
+					<Pagination>
+					<PaginationContent>
+						<PaginationItem>
+							<PaginationPrevious className='transform active:scale-95 transition-transform hover:cursor-pointer bg-(--cambridge-blue) text-green-900 hover:bg-(--reseda-green-3) hover:text-white' texto={t('10.1')} onClick={() => {
+								if (page > 1) {
+									setPage(page - 1);
+								}
+							}}/>
+						</PaginationItem>
+						<PaginationItem>
+							{Array.from({ length: totalPages }, (_, i) => (
+								<PaginationLink className='mx-1 aria-[current]:text-white transform active:scale-95 transition-transform hover:cursor-pointer bg-(--cambridge-blue) text-green-900 hover:bg-(--reseda-green-3) hover:text-white' key={i + 1} isActive={(i + 1 === page)} onClick={() => setPage(i + 1)}>{i + 1}</PaginationLink>
+							))}
+						</PaginationItem>
+						<PaginationItem>
+							{totalPages > 3 ? <PaginationEllipsis /> : null}
+						</PaginationItem>
+						<PaginationItem>
+							<PaginationNext className='transform active:scale-95 transition-transform hover:cursor-pointer bg-(--cambridge-blue) text-green-900 hover:bg-(--reseda-green-3) hover:text-white' texto={t('10.2')} onClick={() => {
+								if (page < totalPages) {
+									setPage(page + 1);
+								}
+							}}/>
+						</PaginationItem>
+					</PaginationContent>
+				</Pagination>
+				) : null}
 			</div>
 				{isModalOpen && (
 				<div className="fixed inset-0 bg-black/85 flex items-center justify-center z-10">
@@ -327,7 +327,7 @@ export default function Comment() {
 								return 0;
 							})
 							.slice((page - 1) * howMany, page * howMany)
-							.map((comment: Comentario) => {
+							.map((comment: comentario) => {
 								return (
 									<div key={comment.Id} className='flex items-center'>
 										<div className="bg-gray-200 p-6 rounded-lg px-10 mx-3 min-w-3xs">

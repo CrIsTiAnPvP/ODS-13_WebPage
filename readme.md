@@ -89,7 +89,7 @@ Si deseas contribuir a este proyecto, por favor sigue los siguientes pasos:
 3. Realiza tus cambios y haz commit (`git commit -m 'Agrega nueva funcionalidad'`).
 4. Sube tus cambios a tu fork (`git push origin feature/nueva-funcionalidad`).
 5. Abre un Pull Request en GitHub.
-6. Espera a que revise tu pull request! :)
+6. Espera a que revise tu pull request! :smile:
 
 ## Licencia
 

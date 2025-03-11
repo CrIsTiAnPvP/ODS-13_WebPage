@@ -72,10 +72,10 @@ export default function Carousel() {
 
   return (
 	<div className="flex justify-center">
-		<div className="w-full max-w-4xl border-4 border-spacing-1 rounded-xl flex-grow px-2 py-0.5 border-(--fern-green) mt-3">
+		<div className="w-full max-w-[26rem] md:max-w-2xl lg:max-w-4xl border-4 border-spacing-1 rounded-xl flex-grow px-2 py-0.5 border-(--fern-green) mt-3">
 		<Slider {...settings}>
 			{images.map((image, index) => (
-			<div key={index} className="relative hover:scale-105 transition-transform duration-300">
+			<div key={index} className="relative hover:scale-[1.005] transition-transform duration-300">
 				<Image
 				src={image.src}
 				alt={image.title}
@@ -84,7 +84,7 @@ export default function Carousel() {
 				height={1080}
 				className="object-cover w-full h-64 md:h-96  border rounded-lg border-white"
 				/>
-				<div className="absolute bottom-5 left-6 bg-black bg-opacity-50 text-white p-4 rounded">
+				<div className="absolute bottom-2 left-2 lg:bottom-5 lg:left-6 bg-black bg-opacity-50 text-white p-3 lg:p-4 rounded">
           <h2 className="text-lg font-bold">{image.title}</h2>
           <p className="text-sm">{image.subtitle}</p>
 				</div>

@@ -124,7 +124,8 @@
 				"5": "ShadCN",
 				"6": "i18next",
 				"7": "TailwindCSS",
-				"8": "Prisma"
+				"8": "Prisma",
+				"9": "Nginx"
 			},
 			"descs":{
 				"1": "React es un framework de JavaScript/TypeScript que se utiliza para crear interfaces de usuario interactivas y reactivas.",
@@ -134,7 +135,8 @@
 				"5": "ShadCN es una libreria de componentes de React",
 				"6": "i18next es una libreria de internacionalización para React",
 				"7": "TailwindCSS es un framework de CSS que se utiliza para diseñar sitios web y aplicaciones web.",
-				"8": "Prisma es un ORM para Node.js que se utiliza para interactuar con bases de datos relacionales."
+				"8": "Prisma es un ORM para Node.js que se utiliza para interactuar con bases de datos relacionales.",
+				"9": "Nginx es un servidor web que muy popular en la actualidad, usado como servidor web o proxy inverso."
 			}
 		}
 	},

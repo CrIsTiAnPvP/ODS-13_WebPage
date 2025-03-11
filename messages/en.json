@@ -124,17 +124,19 @@
 				"5": "ShadCN",
 				"6": "i18next",
 				"7": "TailwindCSS",
-				"8": "Prisma"
+				"8": "Prisma",
+				"9": "Nginx"
 			},
 			"descs":{
-				"1": "React es un framework de JavaScript/TypeScript que se utiliza para crear interfaces de usuario interactivas y reactivas.",
-				"2": "Node.js es un entorno de ejecución de JavaScript que se utiliza para ejecutar código JavaScript en el servidor.",
-				"3": "Next.js es un framework de React que se utiliza para crear aplicaciones web y sitios web estáticos.",
-				"4": "MongoDB es una base de datos NoSQL que se utiliza para almacenar datos en formato JSON.",
-				"5": "ShadCN es una libreria de componentes de React",
-				"6": "i18next es una libreria de internacionalización para React",
-				"7": "TailwindCSS es un framework de CSS que se utiliza para diseñar sitios web y aplicaciones web.",
-				"8": "Prisma es un ORM para Node.js que se utiliza para interactuar con bases de datos relacionales."
+				"1": "React is a JavaScript/TypeScript framework used to create interactive and reactive user interfaces.",
+				"2": "Node.js is a JavaScript runtime environment used to execute JavaScript code on the server.",
+				"3": "Next.js is a React framework used to create web applications and static websites.",
+				"4": "MongoDB is a NoSQL database used to store data in JSON format.",
+				"5": "ShadCN is a React component library.",
+				"6": "i18next is an internationalization library for React.",
+				"7": "TailwindCSS is a CSS framework used to design websites and web applications.",
+				"8": "Prisma is an ORM for Node.js used to interact with relational databases.",
+				"9": "Nginx is a very popular web server today, used as a web server or reverse proxy."
 			}
 		}
 	},

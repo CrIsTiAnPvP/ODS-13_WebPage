@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { siReact, siMongodb, siNodedotjs, siNextdotjs, siPreact, siI18next, siTailwindcss, siPrisma, SimpleIcon } from "simple-icons"
+import { siReact, siMongodb, siNodedotjs, siNextdotjs, siPreact, siI18next, siTailwindcss, siPrisma, SimpleIcon, siNginx } from "simple-icons"
 
 
 export default function AboutContent() {
@@ -13,7 +13,7 @@ export default function AboutContent() {
 		</div>
 	);
 
-	const icons = [[siReact, '#61DAFB'], [siNodedotjs, '#5FA04E'], [siNextdotjs, '#000000'], [siMongodb, '#47A248'], [siPreact, '#673AB8'], [siI18next, '#26A69A'], [siTailwindcss, '#06B6D4'], [siPrisma, '#2D3748']];
+	const icons = [[siReact, '#61DAFB'], [siNodedotjs, '#5FA04E'], [siNextdotjs, '#000000'], [siMongodb, '#47A248'], [siPreact, '#673AB8'], [siI18next, '#26A69A'], [siTailwindcss, '#06B6D4'], [siPrisma, '#2D3748'], [siNginx, '#009639']];
 
 	return (
 		<>

@@ -88,7 +88,7 @@ export default function News() {
 	} else return (
 		<>
 			<div>
-				<div className="flex justify-end w-full lg:w-5/6 gap-2 px-4 lg:px-0">
+				<div className="flex justify-end w-full lg:w-5/6 gap-2 px-4 lg:px-0 mb-2">
 					<Select onValueChange={(value) => {
 						setLoading(true);
 						setOrder(value);
@@ -170,8 +170,8 @@ export default function News() {
 							.slice((page - 1) * howMany, page * howMany)
 							.map((noticia: noticia) => {
 								return (
-									<div key={noticia.Id} className="hover:transform hover:scale-[101%] transition-transform hover:cursor-pointer flex items-center space-x-4 bg-gray-100/30 p-4 rounded-lg lg:mb-2 lg:mt-2" onClick={() => router.push(`/news/${noticia.Id}`)}>
-										<div className="space-y-2 w-full">
+									<div key={noticia.Id} className="hover:transform hover:scale-[101%] transition-transform hover:cursor-pointer flex items-center space-x-4 bg-gray-100/30 p-4 rounded-lg" onClick={() => router.push(`/news/${noticia.Id}`)}>
+										<div className="space-y-2 max-w-[26rem] md:max-w-xl lg:max-w-7xl w-full">
 											<h1 className="text-2xl font-bold">{noticia.titulo}.</h1>
 											<div>
 												{noticia.contenido.split('.').slice(0, 2).map((parrafo, index) => {
@@ -182,9 +182,9 @@ export default function News() {
 														return (<p key={index}>{parrafo.length > 140 ? `${parrafo.substring(0, 140)}...` : parrafo}</p>)
 													}
 												})}
-											</div>
-											<div className='flex justify-end '>
+											<div className='flex justify-end'>
 												<p className='text-(--reseda-green) font-bold'>{new Date(noticia.fecha).toLocaleString().split(',')[0]}</p>
+											</div>
 											</div>
 										</div>
 									</div>

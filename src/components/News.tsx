@@ -21,8 +21,6 @@ export default function News() {
 	const [totalPages, setTotalPages] = useState(1);
 	const [howMany, setHowMany] = useState(6);
 	const [order, setOrder] = useState('newest');
-	// const [search, setSearch] = useState('');
-	// const [searching, setSearching] = useState(false);
 
 	useEffect(() => {
 		fetch('/api/news')

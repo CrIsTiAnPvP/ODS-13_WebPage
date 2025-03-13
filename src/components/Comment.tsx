@@ -17,7 +17,7 @@ export default function Comment() {
 	const err = useTranslations("errors");
 
 	const valid_mail = async (email: string) => {
-		const res = await fetch('/api/comments/mail/validate',
+		const res = await fetch('/api/mail/validate',
 			{
 				method: 'POST',
 				body: JSON.stringify({domain: email.split('@')[1]}),
@@ -30,6 +30,7 @@ export default function Comment() {
 			return true
 		}
 	}
+
 	const schema = z.object({
 		nombre: z.string().min(2, {
 			message: err("1"),
@@ -41,7 +42,7 @@ export default function Comment() {
 		})),
 		comentario: z.string().min(2, {
 			message: err("3"),
-		}).max(30, {
+		}).max(40, {
 			message: err("6")
 		}),
 	})

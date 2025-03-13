@@ -110,7 +110,8 @@
 		"4": "An error occurred while fetching the comments",
 		"5": "An error occurred, please try again",
 		"6": "The comment cannot be longer than 40 characters",
-		"7": "An error occurred while fetching the news"
+		"7": "An error occurred while fetching the news",
+		"8": "The comment cannot be longer than 100 characters"
 	},
 	"about":{
 		"title": "About Us",
@@ -187,6 +188,10 @@
 			"errors": {
 				"1": "There are no news yet",
 				"2": "Wait a moment and try again"
+			},
+			"coments": {
+				"1": "There are no comments in this new yet, Why not leave one?",
+				"2": "Leave a comment"
 			}
 		}
 	},

@@ -110,7 +110,8 @@
 		"4": "Ha ocurrido un error al obtener los comentarios",
 		"5": "Ha ocurrido un error, por favor intentelo de nuevo",
 		"6": "El comentario no puede ser más largo de 40 carácteres",
-		"7": "Ha ocurrido un error al obtener las noticias"
+		"7": "Ha ocurrido un error al obtener las noticias",
+		"8": "El comentario no puede ser más largo de 100 carácteres"
 	},
 	"about":{
 		"title": "Sobre Nosotros",
@@ -187,6 +188,10 @@
 			"errors": {
 				"1": "Aun no hay noticias",
 				"2": "Espera un momento y vuelve a intentarlo"
+			},
+			"coments": {
+				"1": "Aun no hay comentarios en esta notica, ¿Por qué no dejas uno?",
+				"2": "Dejar un comentario"
 			}
 		}
 	},

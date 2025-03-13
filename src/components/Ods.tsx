@@ -76,7 +76,7 @@ export default function OdsComponent() {
 		</section>
 		{
 			modal && (
-				<div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center" onClick={() => setModal(false)}>
+				<div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center">
 					<div className="bg-white/90 p-4 rounded-lg max-w-3xl w-full">
 						<div className="flex justify-between items-center">
 							<h2 className="text-2xl font-bold">{`${t('modal.t1')}${links[modalContent.ods].length}${t('modal.t2')}${modalContent.ods}`}</h2>

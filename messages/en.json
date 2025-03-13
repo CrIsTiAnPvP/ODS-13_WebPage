@@ -9,7 +9,8 @@
 			"2": "You are going to leave the website to go to https://github.com/CrIsTiAnPvP",
 			"3": "Cancel",
 			"4": "Visit"
-		}
+		},
+		"6": "All SDGs"
 	},
 	"rot": {
 		"1": "Climate Change",
@@ -193,5 +194,84 @@
 		"1": "Page not found",
 		"2": "Sorry, the page you are looking for does not exist. You can always try again by clicking the button below",
 		"3": "Back to home"
+	},
+	"ods": {
+		"t": "What are the Sustainable Development Goals?",
+		"1st": "The Sustainable Development Goals are a call to action to end poverty, protect the planet, and ensure that all people enjoy peace and prosperity by 2030.\n They try to achieve this by addressing the global challenges we face, including those related to poverty, inequality, climate change, environmental degradation, peace, and justice.\n The 17 Goals are all interconnected, and to leave no one behind, it is essential to achieve them all by 2030.",
+		"title": "What other SDGs are there?",
+		"st": "There are 17 Sustainable Development Goals in the 2030 Agenda, which are:",
+		"modal": {
+			"t1": "We have found: ",
+			"t2": " webs for SDG ",
+			"st": "Click on each link to see them!"
+		},
+		"1": {
+			"title": "No Poverty",
+			"desc": "End poverty in all its forms everywhere"
+		},
+		"2": {
+			"title": "Zero Hunger",
+			"desc": "End hunger, achieve food security and improved nutrition, and promote sustainable agriculture"
+		},
+		"3": {
+			"title": "Good Health and Well-being",
+			"desc": "Ensure healthy lives and promote well-being for all at all ages"
+		},
+		"4": {
+			"title": "Quality Education",
+			"desc": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all"
+		},
+		"5": {
+			"title": "Gender Equality",
+			"desc": "Achieve gender equality and empower all women and girls"
+		},
+		"6": {
+			"title": "Clean Water and Sanitation",
+			"desc": "Ensure availability and sustainable management of water and sanitation for all"
+		},
+		"7": {
+			"title": "Affordable and Clean Energy",
+			"desc": "Ensure access to affordable, reliable, sustainable, and modern energy for all"
+		},
+		"8": {
+			"title": "Decent Work and Economic Growth",
+			"desc": "Promote sustained, inclusive, and sustainable economic growth, full and productive employment, and decent work for all"
+		},
+		"9": {
+			"title": "Industry, Innovation, and Infrastructure",
+			"desc": "Build resilient infrastructure, promote inclusive and sustainable industrialization, and foster innovation"
+		},
+		"10": {
+			"title": "Reduced Inequality",
+			"desc": "Reduce inequality within and among countries"
+		},
+		"11": {
+			"title": "Sustainable Cities and Communities",
+			"desc": "Make cities and human settlements inclusive, safe, resilient, and sustainable"
+		},
+		"12": {
+			"title": "Responsible Consumption and Production",
+			"desc": "Ensure sustainable consumption and production patterns"
+		},
+		"13": {
+			"title": "Climate Action",
+			"desc": "Take urgent action to combat climate change and its impacts"
+		},
+		"14": {
+			"title": "Life Below Water",
+			"desc": "Conserve and sustainably use the oceans, seas, and marine resources for sustainable development"
+		},
+		"15": {
+			"title": "Life on Land",
+			"desc": "Protect, restore, and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, halt and reverse land degradation, and halt biodiversity loss"
+		},
+		"16": {
+			"title": "Peace, Justice, and Strong Institutions",
+			"desc": "Promote peaceful and inclusive societies for sustainable development, provide access to justice for all, and build effective, accountable, and inclusive institutions at all levels"
+		},
+		"17": {
+			"title": "Partnerships for the Goals",
+			"desc": "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development"
+		}
 	}
 }

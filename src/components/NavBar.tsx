@@ -45,6 +45,11 @@ export default function Nav() {
       name: t('4'),
       href: `/${locale}/news`,
       current: pathname == `/${locale}/news` ? true : false
+    },
+    {
+      name: t('6'),
+      href: `/${locale}/ods`,
+      current: pathname == `/${locale}/ods` ? true : false
     }
   ]
 
@@ -54,7 +59,7 @@ export default function Nav() {
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-              <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+              <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-green-900 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-900">
                 <span className='absoulte inset-0.5'></span>
                 <span className='sr-only'>Abrir Menu</span>
                 <Bars3Icon aria-hidden="true" className="block size-6 group-data-[open]:hidden" />

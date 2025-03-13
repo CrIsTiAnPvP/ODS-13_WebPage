@@ -205,7 +205,7 @@ export default function Comment() {
 	else return (
 		<>	
 			<div>
-				<div className="flex justify-end w-full lg:w-5/6 gap-2 px-3 lg:px-0">
+				<div className="flex justify-end w-full lg:w-5/6 gap-2 px-3 lg:px-0 mb-2">
 					<Select onValueChange={(value) => {
 						setLoading(true);
 						setOrder(value);
@@ -329,7 +329,7 @@ export default function Comment() {
 				</div>
 				)}
 				</div>
-				<div className="flex justify-center mt-10">
+				<div className="flex justify-center mt-6">
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-4 gap-x-0">
 					{
 						comments

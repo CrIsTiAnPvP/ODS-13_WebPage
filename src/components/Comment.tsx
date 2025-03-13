@@ -15,13 +15,30 @@ import { Tooltip } from "react-tooltip"
 
 export default function Comment() {
 	const err = useTranslations("errors");
+
+	const valid_mail = async (email: string) => {
+		const res = await fetch('/api/comments/mail/validate',
+			{
+				method: 'POST',
+				body: JSON.stringify({domain: email.split('@')[1]}),
+				headers: {
+					'Content-Type': 'application/json',
+				}})
+		if (!res.ok) {
+			return false
+		} else {
+			return true
+		}
+	}
 	const schema = z.object({
 		nombre: z.string().min(2, {
 			message: err("1"),
 		}),
 		email: z.string().email({
 			message: err("2"),
-		}),
+		}).refine(valid_mail, () => ({
+			message: err("2")
+		})),
 		comentario: z.string().min(2, {
 			message: err("3"),
 		}).max(30, {

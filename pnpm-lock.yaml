@@ -96,8 +96,8 @@ importers:
         specifier: ^5.28.0
         version: 5.28.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       simple-icons:
-        specifier: ^14.10.0
-        version: 14.10.0
+        specifier: ^14.11.0
+        version: 14.11.0
       slick-carousel:
         specifier: ^1.8.1
         version: 1.8.1(jquery@3.7.1)
@@ -2316,8 +2316,8 @@ packages:
     resolution: {integrity: sha512-ZX99e6tRweoUXqR+VBrslhda51Nh5MTQwou5tnUDgbtyM0dBgmhEDtWGP/xbKn6hqfPRHujUNwz5fy/wbbhnpw==}
     engines: {node: '>= 0.4'}
 
-  simple-icons@14.10.0:
-    resolution: {integrity: sha512-B5Uip8C0jQ0Mux9kDDmaveexwYS+ATVMaRZmaOaJJqbi+QpRBOHRCjGAeJ4RG7DYeoAkPvEOWRcHssUQ87db7g==}
+  simple-icons@14.11.0:
+    resolution: {integrity: sha512-wZmG7JXVhFrobLIUum20blb9mvW3TfUcSLP9bOQ42Ul37GYc/59armh2wKySHzhN1/NaTan5VUQmr/9wYseRXA==}
     engines: {node: '>=0.12.18'}
 
   simple-swizzle@0.2.2:
@@ -4832,7 +4832,7 @@ snapshots:
       side-channel-map: 1.0.1
       side-channel-weakmap: 1.0.2
 
-  simple-icons@14.10.0: {}
+  simple-icons@14.11.0: {}
 
   simple-swizzle@0.2.2:
     dependencies:

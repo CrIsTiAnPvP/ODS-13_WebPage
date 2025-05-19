@@ -36,7 +36,7 @@
     "react": "^19.0.0",
     "react-day-picker": "8.10.1",
     "react-dom": "^19.0.0",
-    "react-hook-form": "^7.55.0",
+    "react-hook-form": "^7.56.4",
     "react-slick": "^0.30.3",
     "react-tooltip": "^5.28.1",
     "simple-icons": "^14.11.0",
